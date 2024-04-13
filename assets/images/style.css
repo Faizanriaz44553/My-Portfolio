@@ -1,0 +1,38 @@
+:root {
+    --primary-color: #34353A;   /* Dark gray */
+    --secondary-color: #E8B765;  /* Light brown */
+    --background-color: #FCFCFC; /* Off-white */
+}
+*{
+    box-sizing: border-box;
+    margin: auto;
+}
+body{
+  background-color: #34353A;
+}
+
+/* navbar started */
+#navbar{
+  background-color: #E8B765;
+  position: fixed;
+  top: 0;
+  width: 100%; /* Navbar ko full width par stretch karna */
+  z-index: 1000;
+}
+/* navbar ended */
+/* header started */
+#header{
+  display: flex;
+  justify-content: center;
+  gap: 500px;
+  margin-top: 200px;
+  height: 1000px;
+}
+/* header ended */
+/* hover started */
+.hover-link:hover{
+ color: #141414;
+}
+/* hover ended */
+
+
