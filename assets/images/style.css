@@ -13,26 +13,274 @@ body{
 
 /* navbar started */
 #navbar{
-  background-color: #E8B765;
+  background-color: #e8b86523;
+  backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
   width: 100%; /* Navbar ko full width par stretch karna */
   z-index: 1000;
+}
+.logo{
+  font-size: 2rem;
 }
 /* navbar ended */
 /* header started */
 #header{
   display: flex;
   justify-content: center;
-  gap: 500px;
-  margin-top: 200px;
-  height: 1000px;
+  gap: 100px;
+  margin-top: 60px;
+  width: 100%;
 }
 /* header ended */
 /* hover started */
 .hover-link:hover{
- color: #141414;
+ color: var(--primary-color);
+}
+.hover-link {
+  position: relative;
+  text-decoration: none;
+}
+
+.hover-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+.hover-link:hover::after {
+  background-color: var(--secondary-color); /* Yaad rahe, aap is color ko apne design ke hisab se badal sakte hain */
 }
 /* hover ended */
+#header-box{
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+}
+.img-div{
+  width: 40%;
+
+}
+.header-paragraph{
+      font-size: 4rem;
+      display: inline;
+      margin-left: 20px;
+      
+}
+#header-image{
+  margin-top: 50px;
+  width: 100%;
+  filter: grayscale(100%);
+  
+}
+#paragraph-div{
+  padding-top: 13%;
+  width: 50%;
+}
+
+.header-second-paragraph{
+  font-size: 2rem;
+  margin-left: 20px;
+  animation: slide-left 2s ease-out forwards;
+  transform: translateX(-50%);
+}
+@keyframes slide-left {
+  0% {
+    transform: translateY(50px); /* Initial position upar se 50px neeche */
+    opacity: 0; /* Initial opacity 0 */
+  }
+  100% {
+    transform: translateY(0); /* Final position */
+    opacity: 1; /* Final opacity 1 */
+  }
+}
+.heading-name {
+  font-size: 5rem;
+  color: #E8B765;
+  font-family: sans-serif;
+  display: inline;
+  animation: slide-in 2s ease-out forwards;
+  position: absolute;
+  transform: translateX(-50%); /* Center me align kiya gaya hai */
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-50px); /* Initial position upar se 50px neeche */
+    opacity: 0; /* Initial opacity 0 */
+  }
+  100% {
+    transform: translateY(0); /* Final position */
+    opacity: 1; /* Final opacity 1 */
+  }
+}
+
+
+.header-button {
+  border: 2px solid #E8B765;
+  border-radius: 5px;
+  color: #E8B765;
+  padding: 5px 10px;
+  background-color: transparent;
+  margin-left: 20px;
+}
+
+.header-button:hover {
+  background-color: #E8B765;
+  color: #34353A;
+}
+
+
+
+
+
+      /* Media query for screens smaller than 576px */
+@media (max-width: 576px) {
+  .logo{
+    font-size: 1.5rem;
+  }
+  .header-paragraph{
+    font-size: 1rem;
+    display: inline;
+    margin-left: 10px;
+}
+
+.header-second-paragraph{
+  font-size: 0.5rem;
+  margin-left: 10px;
+  animation: slide-left 2s ease-out forwards;
+  transform: translateX(-50%);
+}
+
+.heading-name {
+  font-size: 1.5rem;
+  color: #E8B765;
+  font-family: sans-serif;
+  display: inline;
+  animation: slide-in 2s ease-out forwards;
+  position: absolute;
+  transform: translateX(-50%); /* Center me align kiya gaya hai */
+}
+
+.header-button {
+  border: 1px solid #E8B765;
+  border-radius: 5px;
+  color: #E8B765;
+  padding: 3px 7px;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+
+}
+      
+      /* Media query for screens between 576px and 799px */
+@media (min-width: 576px) and (max-width: 799px) {
+  .header-paragraph{
+    font-size: 2rem;
+    display: inline;
+    margin-left: 14px;
+}
+
+.header-second-paragraph{
+  font-size: 1rem;
+  margin-left: 14px;
+  animation: slide-left 2s ease-out forwards;
+  transform: translateX(-50%);
+}
+
+.heading-name {
+  font-size: 3rem;
+  color: #E8B765;
+  font-family: sans-serif;
+  display: inline;
+  animation: slide-in 2s ease-out forwards;
+  position: absolute;
+  transform: translateX(-50%); /* Center me align kiya gaya hai */
+}
+
+.header-button {
+  border: 1px solid #E8B765;
+  border-radius: 5px;
+  color: #E8B765;
+  padding: 3px 8px;
+  background-color: transparent;
+  margin-left: 14px;
+}
+}
+      
+      /* Media query for screens between 800px and 1199px */
+@media (min-width: 800px) and (max-width: 1199px) {
+  .header-paragraph{
+    font-size: 3rem;
+    display: inline;
+    margin-left: 18px;   
+}
+
+.header-second-paragraph{
+  font-size: 1.5rem;
+  margin-left: 18px;
+  animation: slide-left 2s ease-out forwards;
+  transform: translateX(-50%);
+}
+
+.heading-name {
+  font-size: 4rem;
+  color: #E8B765;
+  font-family: sans-serif;
+  display: inline;
+  animation: slide-in 2s ease-out forwards;
+  position: absolute;
+  transform: translateX(-50%); /* Center me align kiya gaya hai */
+}
+
+.header-button {
+  border: 2px solid #E8B765;
+  border-radius: 5px;
+  color: #E8B765;
+  padding: 4px 9px;
+  background-color: transparent;
+  margin-left: 20px;
+}
+
+}
+      
+      /* Media query for screens larger than or equal to 1200px */
+@media (min-width: 1200px) {
+  .header-paragraph{
+    font-size: 4rem;
+    display: inline;
+    margin-left: 20px;   
+}
+
+.header-second-paragraph{
+  font-size: 2rem;
+  margin-left: 20px;
+  animation: slide-left 2s ease-out forwards;
+  transform: translateX(-50%);
+}
+
+.heading-name {
+  font-size: 5rem;
+  color: #E8B765;
+  font-family: sans-serif;
+  display: inline;
+  animation: slide-in 2s ease-out forwards;
+  position: absolute;
+  transform: translateX(-50%); /* Center me align kiya gaya hai */
+}
+
+.header-button {
+  border: 2px solid #E8B765;
+  border-radius: 5px;
+  color: #E8B765;
+  padding: 5px 10px;
+  background-color: transparent;
+  margin-left: 20px;
+}
+}
 
 
