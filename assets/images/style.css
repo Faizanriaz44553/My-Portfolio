@@ -306,7 +306,6 @@ border-radius: 5px;
   color: var(--primary-color);
 }
 
-
 /* Keyframes for animation */
 @keyframes boxAnimation {
   0% { transform: translateY(-100px); opacity: 0; }
@@ -329,21 +328,105 @@ border-radius: 5px;
 .tech-logo{
   font-size: 3rem;
 }
-
-
-
-
 /* skill section ended */
 
 
+ 
+/* portfolio section started */
+.portfolio-box-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+  transition-duration: 0.3s; /* Safari */
+  transition-duration: 0.3s;
+}
+
+.box:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+  box-shadow: 0 0 30px 0 var(--secondary-color), /* Shadow color with blur effect */
+  0 0 30px 0 var(--secondary-color), /* Shadow color with blur effect */
+  0 0 30px 0 var(--secondary-color), /* Shadow color with blur effect */
+  0 0 30px 0 var(--secondary-color); /* Shadow color with blur effect */
+border: none; /* Border color */
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.box:hover img {
+  transform: scale(1.1);
+}
+
+.box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.box:hover .overlay {
+  opacity: 1;
+}
+
+.box .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.box:hover .content {
+  opacity: 1;
+}
+
+.box .content h2 {
+  margin-bottom: 10px;
+  display: none;
+}
+
+.box:hover .content h2 {
+  display: block;
+}
+
+.box .content p {
+  font-size: 14px;
+}
+/* portfolio section ended */
 
 
 
 
-
-
-
-      /* Media query for screens smaller than 576px */
+ /* Media query for screens smaller than 576px */
 @media (max-width: 576px) {
   .logo{
     font-size: 1.5rem;

@@ -50,7 +50,7 @@
 .fd-row{
     flex-direction: row;
 }
-.t-a-center{
+.text-a-center{
     text-align: center;
 }
 
@@ -100,6 +100,9 @@
 }
 .mtop-10{
     margin-top: 100px;
+}
+.mtop-11{
+    margin-top: 150px;
 }
 /* margin top ended */
 
@@ -345,4 +348,8 @@
 /* crosar started */
 .crosar{
     cursor: pointer;
+}
+
+.box-redius{
+    border-radius: 10px;
 }
