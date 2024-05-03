@@ -22,7 +22,16 @@ body{
   z-index: 1000;
 }
 .logo{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 2rem;
+}
+.all-links{
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: smaller;
 }
 /* navbar ended */
 /* header started */
@@ -67,7 +76,10 @@ body{
 
 }
 .header-paragraph{
-      font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+      font-size: 2rem;
       display: inline;
       margin-left: 20px;
       
@@ -85,6 +97,9 @@ body{
 }
 
 .header-second-paragraph{
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
   font-size: 2rem;
   margin-left: 20px;
   animation: slide-left 2s ease-out forwards;
@@ -101,9 +116,11 @@ body{
   }
 }
 .heading-name {
-  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6rem;
   color: #E8B765;
-  font-family: sans-serif;
   display: inline;
   animation: slide-in 2s ease-out forwards;
   position: absolute;
@@ -123,6 +140,9 @@ body{
 
 
 .header-button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
   border: 2px solid #E8B765;
   border-radius: 5px;
   color: #E8B765;
@@ -151,9 +171,11 @@ body{
   margin-top: 10px;
 }
 .about-paragraph{
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;;
   font-size: 1.3rem;
   word-spacing: 5px;
-  font-weight: lighter;
   display: inline;
 }
 /* about ended */
@@ -161,6 +183,13 @@ body{
 
 
 /* skill section started */
+.skills-heading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
 .skill-sections{
  width: 100%;
  display: flex;
@@ -333,6 +362,15 @@ border-radius: 5px;
 
  
 /* portfolio section started */
+.portfolio-heading{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 3.5rem;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
 .portfolio-box-section {
   display: flex;
   flex-wrap: wrap;

@@ -24,6 +24,7 @@
 </head>
 <body style="background-color: #34353A;">
 
+<!-- navbar started -->
 <div>
     <nav class="navbar navbar-expand-sm navbar sticky-top" id="navbar">
         <div class="container-fluid">
@@ -34,30 +35,37 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item hover-link">
-                        <a class="nav-link active" aria-current="page" href="#" style="color: white;"><span class="mright-1"><i class="fa-solid fa-house"></i></span>Home</a>
+                        <a class="nav-link active all-links" aria-current="page" href="#home-page" style="color: white;"><span class="mright-1"><i class="fa-solid fa-house"></i></span>Home</a>
                     </li>
                     <li class="nav-item hover-link">
-                        <a class="nav-link" href="" style="color: white;"><span class="mright-1"><i class="fa-solid fa-user"></i></span>About</a>
+                        <a class="nav-link all-links" href="#about-page" style="color: white;"><span class="mright-1"><i class="fa-solid fa-user"></i></span>About</a>
                     </li>
                     <li class="nav-item hover-link">
-                        <a class="nav-link" href="#" style="color: white;"><span class="mright-1"><i class="fa-solid fa-diagram-project"></i></span>Project</a>
+                        <a class="nav-link all-links" href="#skills-page" style="color: white;"><span class="mright-1"><i class="fa-solid fa-code"></i></span>Skills</a>
                     </li>
                     <li class="nav-item hover-link">
-                        <a class="nav-link" href="#" style="color: white;"><span class="mright-1"><i class="fa-solid fa-book"></i></span>Experienced</a>
+                        <a class="nav-link all-links" href="#project-page" style="color: white;"><span class="mright-1"><i class="fa-solid fa-diagram-project"></i></span>Portfolio</a>
+                    </li>
+                    <li class="nav-item hover-link">
+                        <a class="nav-link all-links" href="#" style="color: white;"><span class="mright-1"><i class="fa-solid fa-book"></i></span>Experienced</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </div>
+<!-- navbar ended -->
 
-<main style="margin-bottom: 10000px;">
+<main>
+
+<!-- section Home Page started -->
+<section id="home-page">
     <div class="width-13" id="header-box">
         <div id="header">
             <div id="paragraph-div">
                 <P class="header-paragraph">I'M  <h1 class="heading-name"> &nbsp;FAIZAN RIAZ</h1>
                 </P>
-                <p class="animate__rubberBand header-second-paragraph">Marn Stack Developer & <br>React Developer</p>
+                <p class="animate__rubberBand header-second-paragraph">Mern Stack Developer & <br>React Developer</p>
                 <a href="#" class="header-link"><button class="header-button">Contact Me</button></a>
 
             </div>
@@ -66,10 +74,16 @@
             </div>
         </div>
     </div>
+</section>
+<!-- section Home Page ended -->
 
+
+
+<!-- section About started -->
+<section id="about-page"></section>
 <div class="container">
     <div class="width-13 mtop-9">
-        <h1 class="about-heading">About Me</h1>
+        <h1 class="about-heading skills-heading">About Me</h1>
 
         <div style="display: flex; width: 100%; gap: 10px;">
             <div id="about-line"></div>
@@ -82,45 +96,53 @@
             </div>
         </div>
     </div>
+</section>
+<!-- section About ended -->
 
+
+
+<!-- section Skills started -->
+<section id="skills-page">
     <div class="width-13" style="padding-top: 50px;">
-        <h1 class="text-a-center">Skills</h1>
+        <h1 class="text-a-center skills-heading">Skills</h1>
         <div class="skill-sections">
            
-            <div class="skill-box"><img class="skills-logo" src="./assets/images/images-removebg-preview.png" alt=""> <h1 class="t-a-center mtop-3">HTML</h1></div>
-            <div class="skill-box"><img class="skills-logo" src="./assets/images/images__1_-removebg-preview.png" alt=""><h1 class="t-a-center mtop-3">CSS</h1></div>
-            <div class="skill-box" style="padding-left: 25px; padding-right: 25px;"><img class="skills-logo" src="./assets/images/png-clipart-javascript-logo-computer-icons-vue-js-angle-text-thumbnail-removebg-preview (1).png" alt=""><h1 class="t-a-center mtop-3" style="font-size: xx-large;">JavaScript</h1></div>
-            <div class="skill-box" style="padding-left: 25px; padding-right: 25px;"><img class="skills-logo" src="./assets/images/typescript_original_logo_icon_146317.png" alt=""><h1 class="t-a-center mtop-3" style="font-size: xx-large;">TypeScript</h1></div>
+            <div class="skill-box"><img class="skills-logo" src="./assets/images/images-removebg-preview.png" alt=""> <h1 class="t-a-center mtop-3 font-family-poppin">HTML</h1></div>
+            <div class="skill-box"><img class="skills-logo" src="./assets/images/images__1_-removebg-preview.png" alt=""><h1 class="t-a-center mtop-3 font-family-poppin">CSS</h1></div>
+            <div class="skill-box" style="padding-left: 25px; padding-right: 25px;"><img class="skills-logo" src="./assets/images/png-clipart-javascript-logo-computer-icons-vue-js-angle-text-thumbnail-removebg-preview (1).png" alt=""><h1 class="t-a-center mtop-3 font-family-poppin" style="font-size: xx-large;">JavaScript</h1></div>
+            <div class="skill-box" style="padding-left: 25px; padding-right: 25px;"><img class="skills-logo" src="./assets/images/typescript_original_logo_icon_146317.png" alt=""><h1 class="t-a-center mtop-3 font-family-poppin" style="font-size: xx-large;">TypeScript</h1></div>
         </div>
-        <h1 class="text-a-center mtop-4">Technologies:</h1>
+        <h1 class="text-a-center mtop-4 skills-heading">Technologies:</h1>
         <div class="skill-sections">
-            <div class="tech-box-1 tech-box-hover"><i class="fa-brands fa-bootstrap tech-logo"></i> <p>Bootstrap</p></div>
-            <div class="tech-box-2 tech-box-hover"><ion-icon class="tech-logo" name="logo-firebase"></ion-icon><p>Firebase</p></div>
-            <div class="tech-box-3 tech-box-hover"><i class="fa-brands fa-react tech-logo"></i><span style="width: 100%;"><p>ReactJS</p></span></div>
-            <div class="tech-box-4 tech-box-hover"><span><img style="width: 50px;" src="https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png" alt=""></span> <p style="margin-top: 10px;">NextJS</p></div>
-        </div>
-        <div class="skill-sections">
-            <div class="tech-box-5 tech-box-hover"><ion-icon name="logo-nodejs" class="tech-logo" style="padding: 10px;"></ion-icon><p>NodeJS</p></div>
-            <div class="tech-box-6 tech-box-hover"><i class="fa-solid fa-leaf tech-logo" ></i><p>MongoDB</p></div>
-            <div class="tech-box-7 tech-box-hover"> <span><img style="width: 50px;" src="https://static-00.iconduck.com/assets.00/nestjs-icon-512x510-fo1q60vg.png" alt=""></span><p>NestJS</p></div>
-            <div class="tech-box-8 tech-box-hover"><ion-icon name="logo-react" class="tech-logo"></ion-icon><p>R Native</p></div>
+            <div class="tech-box-1 tech-box-hover"><i class="fa-brands fa-bootstrap tech-logo"></i> <p class="font-family-poppin">Bootstrap</p></div>
+            <div class="tech-box-2 tech-box-hover"><ion-icon class="tech-logo" name="logo-firebase"></ion-icon><p class="font-family-poppin">Firebase</p></div>
+            <div class="tech-box-3 tech-box-hover"><i class="fa-brands fa-react tech-logo"></i><span style="width: 100%;"><p class="font-family-poppin">ReactJS</p></span></div>
+            <div class="tech-box-4 tech-box-hover"><span><img style="width: 50px;" src="https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png" alt=""></span> <p style="margin-top: 10px;" class="font-family-poppin">NextJS</p></div>
         </div>
         <div class="skill-sections">
-            <div class="tech-box-9 tech-box-hover"><span><img style="width: 50px; padding-top: 15px;" src="https://w7.pngwing.com/pngs/545/451/png-transparent-node-js-express-js-javascript-solution-stack-web-application-others-angle-text-rectangle-thumbnail.png" alt=""></span><p>ExpressJS</p></div>
+            <div class="tech-box-5 tech-box-hover"><ion-icon name="logo-nodejs" class="tech-logo" style="padding: 10px;"></ion-icon><p class="font-family-poppin">NodeJS</p></div>
+            <div class="tech-box-6 tech-box-hover"><i class="fa-solid fa-leaf tech-logo" ></i><p class="font-family-poppin">MongoDB</p></div>
+            <div class="tech-box-7 tech-box-hover"> <span><img style="width: 50px;" src="https://static-00.iconduck.com/assets.00/nestjs-icon-512x510-fo1q60vg.png" alt=""></span><p class="font-family-poppin">NestJS</p></div>
+            <div class="tech-box-8 tech-box-hover"><ion-icon name="logo-react" class="tech-logo"></ion-icon><p class="font-family-poppin">R Native</p></div>
         </div>
-        <h1 class="text-a-center">Others:</h1>
+        <div class="skill-sections">
+            <div class="tech-box-9 tech-box-hover"><span><img style="width: 50px; padding-top: 15px;" src="https://w7.pngwing.com/pngs/545/451/png-transparent-node-js-express-js-javascript-solution-stack-web-application-others-angle-text-rectangle-thumbnail.png" alt=""></span><p class="font-family-poppin">ExpressJS</p></div>
+        </div>
+        <h1 class="text-a-center skills-heading">Others:</h1>
         <div class="skill-sections">
             <div><i class="fa-brands fa-github font-size-9 other-box"></i></div>
             <div><i class="fa-brands fa-gitlab font-size-9 other-box"></i></div>
             <div><i class="fa-brands fa-git font-size-9 other-box"></i></div>
         </div>
     </div>
+</section>
+<!-- section Skills ended -->
 
 
+
+<!-- section Project started -->
+<section id="project-page">
     <h1 class="portfolio-heading">Portfolio</h1>
-
-
-
     <div class="portfolio-box-section">
         <div class="box">
             <img src="./assets/images/percentage.com.png" alt="Project 1">
@@ -176,9 +198,8 @@
             </div>
         </div>
     </div>
-    
-    </body>
-    </html>
+</section>
+<!-- section Project eneded -->
     
 
 

@@ -322,6 +322,12 @@
 }
 /* font size ended */
 
+.font-family-poppin{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
 /* text color started */
 .t-c-black{
     color: #000000;
