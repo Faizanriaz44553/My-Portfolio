@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback, memo } from "react"
 import { Github, Linkedin, Mail, ExternalLink, Instagram, Sparkles } from "lucide-react"
-import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 // Memoized Components
 const StatusBadge = memo(() => (
