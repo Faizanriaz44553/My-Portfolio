@@ -7,14 +7,3 @@ export default defineConfig(({ mode }) => ({
     alias: mode === "production" ? { "@babel/runtime": require.resolve("@babel/runtime") } : {},
   },
 }));
-
-
-// import { defineConfig } from 'vite';
-
-// export default defineConfig({
-//   resolve: {
-//     alias: {
-//       '@babel/runtime': '/node_modules/@babel/runtime',
-//     },
-//   },
-// });
